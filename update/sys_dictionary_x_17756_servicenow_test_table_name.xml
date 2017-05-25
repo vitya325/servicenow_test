@@ -52,8 +52,8 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-04-28 13:39:05</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>71a9b19fdb12320079b0d421cf9619ca</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>73ff60c8db033200afdcf11ebf9619d6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Name</sys_name>
         <sys_package display_value="ServiceNow Test" source="x_17756_servicenow">2429755bdb12320079b0d421cf96199d</sys_package>
@@ -61,8 +61,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="ServiceNow Test">2429755bdb12320079b0d421cf96199d</sys_scope>
         <sys_update_name>sys_dictionary_x_17756_servicenow_test_table_name</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-04-28 13:39:05</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-05-25 12:40:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

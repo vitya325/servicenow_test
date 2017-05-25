@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_17756_servicenow.ServiceNowTestApp</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>ServiceNowTestApp</name>
+        <script><![CDATA[var ServiceNowTestApp = Class.create();
+ServiceNowTestApp.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {		
+	
+	generateNewName: function(){
+		var prefix = 'Video_';
+		var td = new GlideDate().getDisplayValue();		
+		var suffix = '_' + this._generateRandomIdentificator();		
+		var identificator = prefix + td.toString() + suffix.toString();
+		
+		return identificator;
+	},
+	
+	_generateRandomIdentificator: function(){		
+		var guidLength = 10;
+		var guid = '';
+		
+		var rand = Math.random();
+		var randCeil = Math.ceil(rand);
+		
+		var miliseconds = new GlideDateTime().getNumericValue();
+		var randomized = randCeil * miliseconds;						
+		guid = String(randomized).substring(0, guidLength);
+		
+		return guid;
+		
+	},
+	
+    type: 'ServiceNowTestApp'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-05-25 13:18:13</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>5b80700cdb033200afdcf11ebf961944</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>ServiceNowTestApp</sys_name>
+        <sys_package display_value="ServiceNow Test" source="x_17756_servicenow">2429755bdb12320079b0d421cf96199d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="ServiceNow Test">2429755bdb12320079b0d421cf96199d</sys_scope>
+        <sys_update_name>sys_script_include_5b80700cdb033200afdcf11ebf961944</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-05-25 13:29:35</sys_updated_on>
+    </sys_script_include>
+</record_update>
